@@ -1,7 +1,7 @@
 Certainly! Below is a template for a README file that you can use for your Flutter project incorporating Firebase authentication:
 
 ```markdown
-# PayPie
+PayPie
 
 ## Overview
 
@@ -36,21 +36,6 @@ Briefly describe the purpose and functionality of your Flutter application that 
    - Follow the [Firebase setup guide](https://firebase.google.com/docs/flutter/setup) to add Firebase to your Flutter project.
    - Enable Email/Password and Phone sign-in methods in the Firebase console.
 
-## Configuration
-
-Create a file named `.env` in the root of your project and add your Firebase configuration:
-
-```env
-API_KEY=your_api_key
-AUTH_DOMAIN=your_auth_domain
-DATABASE_URL=your_database_url
-PROJECT_ID=your_project_id
-STORAGE_BUCKET=your_storage_bucket
-MESSAGING_SENDER_ID=your_messaging_sender_id
-APP_ID=your_app_id
-```
-
-Replace the values with your Firebase project credentials.
 
 ## Running the App
 
