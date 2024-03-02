@@ -75,10 +75,6 @@ flutter run
 - **Sign-out Functionality:**
   - Implementing user sign-out functionality.
 
-## Evaluation Criteria
-
-Interns will be evaluated based on the completeness of the implementation, code quality, adherence to best practices, and the ability to incorporate state management and Firebase integration effectively.
-
 ## Contributing
 
 If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
