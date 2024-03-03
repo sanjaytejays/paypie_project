@@ -82,6 +82,3 @@ If you'd like to contribute to this project, please follow the [Contributing Gui
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
-
-Feel free to customize this README template according to the specific details and needs of your project. Include any additional sections or information that you find relevant.
