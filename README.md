@@ -23,7 +23,7 @@ This project is done to show case my flutter skills. Since I have applied for a 
 2. Navigate to the project directory:
 
    ```bash
-   cd paypie
+   cd paypie_project
    ```
 
 3. Install dependencies:
