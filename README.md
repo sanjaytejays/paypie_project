@@ -3,9 +3,9 @@ Certainly! Below is a template for a README file that you can use for your Flutt
 ```markdown
 PayPie
 
-## Overview
+ Overview
 
-Briefly describe the purpose and functionality of your Flutter application that incorporates Firebase authentication.
+This project is done to show case my flutter skills. Since I have applied for a internship. Paypie has asked me to do this task.
 
 ## Requirements
 
@@ -17,13 +17,13 @@ Briefly describe the purpose and functionality of your Flutter application that 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/your_project.git
+   git clone https://github.com/sanjaytejays/paypie_project.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd your_project
+   cd paypie
    ```
 
 3. Install dependencies:
