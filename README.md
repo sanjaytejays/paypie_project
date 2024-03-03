@@ -63,7 +63,7 @@ flutter run
   - Clean and intuitive layout.
   - Error handling and user feedback during authentication and profile creation.
 
-## Bonus Features
+## Other Features
 
 - **Profile Update:**
   - Allowing users to update their profiles after the initial creation.
