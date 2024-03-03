@@ -1,7 +1,6 @@
-Certainly! Below is a template for a README file that you can use for your Flutter project incorporating Firebase authentication:
 
-```markdown
-PayPie
+
+###PayPie
 
  Overview
 
