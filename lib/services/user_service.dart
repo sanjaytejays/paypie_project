@@ -66,6 +66,40 @@ class UserService with ChangeNotifier {
     }
   }
 
+  //update the data
+  void updateUserProfile(
+      {required XFile image,
+      required String name,
+      required String email,
+      required String bio,
+      required String gender,
+      required DateTime dob}) async {
+    final userUid = FirebaseAuth.instance.currentUser!.uid;
+
+    try {
+      final storageRef =
+          FirebaseStorage.instance.ref().child('profile_pics/$userUid');
+      await storageRef.putFile(File(image.path));
+      final imageUrl = await storageRef.getDownloadURL();
+      UserModel userModel;
+      userModel = UserModel(
+          uid: userUid,
+          name: name,
+          email: email,
+          bio: bio,
+          gender: gender,
+          dob: dob,
+          imageUrl: imageUrl);
+      await FirebaseFirestore.instance
+          .collection("users")
+          .doc(userUid)
+          .update(userModel.toMap());
+      print("success");
+    } catch (e) {
+      print(e);
+    }
+  }
+
   void signOut(BuildContext context) async {
     try {
       await FirebaseAuth.instance.signOut();

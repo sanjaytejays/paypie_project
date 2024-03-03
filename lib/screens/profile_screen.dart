@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:paypie_project/models/user_model.dart';
-import 'package:paypie_project/screens/create_user_profile_screen.dart';
+import 'package:paypie_project/screens/update_profile_screen.dart';
 import 'package:paypie_project/services/user_service.dart';
 import 'package:provider/provider.dart';
 
@@ -101,7 +101,7 @@ class ProfilePage1 extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const UserProfileScreen()));
+                                          UpdateProfilePage()));
                             },
                             child: const ListTile(
                               leading: Icon(

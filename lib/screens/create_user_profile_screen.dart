@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:paypie_project/screens/profile_screen.dart';
@@ -22,6 +24,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
   final ImagePicker _imagePicker = ImagePicker();
   DateTime _selectedDate = DateTime.now();
   XFile? image;
+  File? _image;
 
   // Function to pick an image from the gallery
   Future<void> _pickImage() async {
@@ -31,6 +34,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     if (pickedFile != null) {
       setState(() {
         image = pickedFile;
+        _image = File(pickedFile.path);
       });
     }
   }
@@ -62,12 +66,20 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
               children: [
                 // Image Upload
                 Center(
-                  child: GestureDetector(
+                  child: InkWell(
                     onTap: _pickImage,
-                    child: const CircleAvatar(
-                      backgroundColor: Colors.amberAccent,
-                      child: Icon(Icons.photo),
-                      radius: 40,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.black,
+                      radius: 40.0,
+                      child: CircleAvatar(
+                        radius: 38.0,
+                        backgroundColor: Colors.white,
+                        child: ClipOval(
+                          child: (image != null)
+                              ? Image.file(_image!)
+                              : const Icon(Icons.photo_camera),
+                        ),
+                      ),
                     ),
                   ),
                 ),
