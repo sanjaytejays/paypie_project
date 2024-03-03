@@ -1,6 +1,6 @@
 
 
-##PayPie
+## Paypie Project
 
  Overview
 
